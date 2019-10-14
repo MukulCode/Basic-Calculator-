@@ -28,6 +28,8 @@ def div(num1, num2):
 def mul(num1, num2):
     print(num1 * num2)
 
+
+# function for power of a number
 def pow(num1, num2):
     print(num1**num2)
 
@@ -42,7 +44,6 @@ while True:
     print('\t3:DIVISION OF TWO NUMBERS')
     print('\t4:MULTIPLICATION OF TWO NUMBERS')
     print('\t5:POWER OF A NUMBER (FIRST^SECOND)')
-
 
     # take input from the user
     choice = input('ENTER CHOICES BETWEEN 1 AND 5')
@@ -60,16 +61,17 @@ while True:
     elif choice == '2':
         sub(num1, num2)
 
-    # if choice is one then the div function will be called
+    # if choice is three then the div function will be called
     elif choice == '3':
         div(num1, num2)
 
-    # if choice is one then the mul function will be called
+    # if choice is four then the mul function will be called
     elif choice == '4':
         mul(num1, num2)
 
+    # if choice is five the pow function will be called
     elif choice == '5':
-        num1**num2
+        pow(num1, num2)
 
     # if choice does not lies between 1 and 5 then there is an error message
     else:
