@@ -34,6 +34,10 @@ def pow(num1, num2):
     print(num1**num2)
 
 
+def perc_diff(num1, num2):
+    print(abs(num1 - num2) / (num1 + num2) * 200, "%")
+
+
 while True:
 
     # printing a formatted menu for the calculator
@@ -44,9 +48,10 @@ while True:
     print('\t3:DIVISION OF TWO NUMBERS')
     print('\t4:MULTIPLICATION OF TWO NUMBERS')
     print('\t5:POWER OF A NUMBER (FIRST^SECOND)')
+    print('\t6:PERCENT DIFFERENCE')
 
     # take input from the user
-    choice = input('ENTER CHOICES BETWEEN 1 AND 5')
+    choice = input('ENTER CHOICES BETWEEN 1 AND 6')
     # take two numbers from the user to operate upon them
     print('ENTER TWO NUMBERS')
     num1 = int(input('ENTER FIRST NUMBER'))
@@ -72,6 +77,10 @@ while True:
     # if choice is five the pow function will be called
     elif choice == '5':
         pow(num1, num2)
+
+    # uf choice is six, calculate the percent difference
+    elif choice == '6':
+        perc_diff(num1, num2)
 
     # if choice does not lies between 1 and 5 then there is an error message
     else:
